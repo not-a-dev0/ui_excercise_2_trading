@@ -15,10 +15,10 @@ yarn start
 ### Tasks
 
 1.  Build this panel as a component:
-    ![](../assets/img1.png)
+    ![](https://raw.githubusercontent.com/s-mikhailov/ui_excercise_2_trading/master/assets/img1.png)
 
 2.  Now layout multiple panels as follows:
-    ![](../assets/img2.png)
+    ![](https://raw.githubusercontent.com/s-mikhailov/ui_excercise_2_trading/master/assets/img2.png)
 
 The datasource is:
 
@@ -34,9 +34,9 @@ The datasource is:
 ```
 
 3.  On hovering the mouse over the left price indicator, change the colour to red with a blue border. On hovering the mouse over the right price indicator, change the colour to green with a blue border.
-    ![](../assets/img31.png)
-    ![](../assets/img32.png)
+    ![](https://raw.githubusercontent.com/s-mikhailov/ui_excercise_2_trading/master/assets/img31.png)
+    ![](https://raw.githubusercontent.com/s-mikhailov/ui_excercise_2_trading/master/assets/img32.png)
 
 4.  To test your app, you should write a test harness that changes the prices randomly every 1 second to within +/- 10% of the original value. If the buy price increases, show a green upwards facing arrow between the two price indicators. If the buy price decreases, show a red downwards facing arrow.
-    ![](../assets/img41.png)
-    ![](../assets/img42.png)
+    ![](https://raw.githubusercontent.com/s-mikhailov/ui_excercise_2_trading/master/assets/img41.png)
+    ![](https://raw.githubusercontent.com/s-mikhailov/ui_excercise_2_trading/master/assets/img42.png)

@@ -12,6 +12,19 @@ yarn install
 yarn start
 ```
 
+### Description
+
+I used React for this app, pure CSS(BEM-like syntax).
+
+As an API I used mocky.io and simple fetch() to get data.
+[http://www.mocky.io/v2/5b68d5923300008a3a32ddb4](http://www.mocky.io/v2/5b68d5923300008a3a32ddb4)
+
+I used a simple decorator to test the component with random numbers.
+
+App.js - fetch data, render cards.
+Card.js - layout and logic of fx cards.
+CardDecorator.js - wrapper with logic for the test.
+
 ### Tasks
 
 1.  Build this panel as a component:
@@ -38,11 +51,9 @@ The datasource is:
 3.  On hovering the mouse over the left price indicator, change the colour to red with a blue border. On hovering the mouse over the right price indicator, change the colour to green with a blue border.
 
     ![](https://raw.githubusercontent.com/s-mikhailov/ui_excercise_2_trading/master/assets/img31.png)
-
     ![](https://raw.githubusercontent.com/s-mikhailov/ui_excercise_2_trading/master/assets/img32.png)
 
 4.  To test your app, you should write a test harness that changes the prices randomly every 1 second to within +/- 10% of the original value. If the buy price increases, show a green upwards facing arrow between the two price indicators. If the buy price decreases, show a red downwards facing arrow.
 
     ![](https://raw.githubusercontent.com/s-mikhailov/ui_excercise_2_trading/master/assets/img41.png)
-
     ![](https://raw.githubusercontent.com/s-mikhailov/ui_excercise_2_trading/master/assets/img42.png)

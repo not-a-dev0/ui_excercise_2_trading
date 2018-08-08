@@ -16,14 +16,14 @@ yarn start
 
 I used React for this app, pure CSS(BEM-like syntax).
 
-As an API I used mocky.io and simple fetch() to get data.
+As an API I used mocky.io and simple fetch() to get data:
 [http://www.mocky.io/v2/5b68d5923300008a3a32ddb4](http://www.mocky.io/v2/5b68d5923300008a3a32ddb4)
 
 I used a simple decorator to test the component with random numbers.
 
-App.js - fetch data, render cards.
-Card.js - layout and logic of fx cards.
-CardDecorator.js - wrapper with logic for the test.
+- App.js - fetch data, render cards.
+- Card.js - layout and logic of fx cards.
+- CardDecorator.js - wrapper with logic for the test.
 
 ### Tasks
 

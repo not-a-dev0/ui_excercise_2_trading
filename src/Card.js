@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CardDecorator from './CardDecorator';
 import './Card.css';
 
 const renderPrice = (price, index) => {
@@ -28,16 +29,15 @@ class Card extends Component {
   handleHover = value => {
     const valueToUpper = value[0].toUpperCase() + value.slice(1);
 
-    this.setState(prevState => {
-      return {
-        [`isHovered${valueToUpper}`]: !prevState[`isHovered${valueToUpper}`]
-      };
-    });
+    this.setState(prevState => ({
+      [`isHovered${valueToUpper}`]: !prevState[`isHovered${valueToUpper}`]
+    }));
   };
 
   render() {
     const {
-      price: { pair, sell, buy }
+      price: { pair, sell, buy },
+      indicator
     } = this.props;
 
     const pairArr = pair.split(' ');
@@ -62,7 +62,9 @@ class Card extends Component {
             </div>
           </div>
 
-          <div className="card__arrow">&#x25B4;</div>
+          <div className={`card__arrow ${indicator && 'card__arrow--up'}`}>
+            &#x25B4;
+          </div>
 
           <div
             className={`price price--buy ${this.state.isHoveredBuy &&
@@ -82,4 +84,4 @@ class Card extends Component {
   }
 }
 
-export default Card;
+export default CardDecorator(Card);

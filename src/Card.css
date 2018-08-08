@@ -15,12 +15,12 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: scale(1, 2) translate(-50%, 0) rotate3d(0, 0, 1, 0);
-  color: #008000;
-}
-.card__arrow--down {
   transform: scale(1, 2) translate(-50%, 3px) rotate3d(0, 0, 1, 180deg);
   color: #f00;
+}
+.card__arrow--up {
+  transform: scale(1, 2) translate(-50%, 0) rotate3d(0, 0, 1, 0);
+  color: #008000;
 }
 
 .card__title {

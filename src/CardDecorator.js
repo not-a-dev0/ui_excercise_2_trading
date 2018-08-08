@@ -8,25 +8,24 @@ export default OriginalComponent =>
     };
 
     tick() {
-      this.setState(
-        (prevState, props) => {
-          const {
-            price: { sell, buy }
-          } = props;
+      this.setState((prevState, props) => {
+        const {
+          price: { sell, buy }
+        } = props;
+        const randomSell = this.randomPrice(sell);
+        const randomBuy = this.randomPrice(buy);
 
-          return {
-            price: {
-              ...props.price,
-              sell: this.randomPrice(sell),
-              buy: this.randomPrice(buy)
-            }
-          };
-        },
-        () =>
-          this.setState({
-            indicator: this.state.price.buy >= this.props.price.buy
-          })
-      );
+        console.log(randomBuy, prevState.price.buy);
+
+        return {
+          price: {
+            ...props.price,
+            sell: randomSell,
+            buy: randomBuy
+          },
+          indicator: randomBuy < prevState.price.buy
+        };
+      });
     }
 
     randomPrice(value) {
@@ -46,6 +45,7 @@ export default OriginalComponent =>
     }
 
     render() {
+      console.log(this.state.indicator);
       return (
         <OriginalComponent
           {...this.props}

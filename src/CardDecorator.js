@@ -15,8 +15,6 @@ export default OriginalComponent =>
         const randomSell = this.randomPrice(sell);
         const randomBuy = this.randomPrice(buy);
 
-        console.log(randomBuy, prevState.price.buy);
-
         return {
           price: {
             ...props.price,
@@ -45,7 +43,6 @@ export default OriginalComponent =>
     }
 
     render() {
-      console.log(this.state.indicator);
       return (
         <OriginalComponent
           {...this.props}
